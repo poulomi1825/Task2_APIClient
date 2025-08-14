@@ -1,18 +1,35 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# API Client – Weather Data Fetcher
 
-## Folder Structure
+A simple Java program that fetches **real-time weather data** for Kolkata from the [Open-Meteo API](https://open-meteo.com/) and displays temperature, condition, and time.
 
-The workspace contains two folders by default, where:
+ Tech Stack
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+* Java (JDK 8+)
+* `HttpURLConnection` (HTTP requests)
+* Regex (JSON parsing)
+* Java Date & Time API
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+ How to Run
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+bash
+javac Task2_APIClient/APIClient.java
+java Task2_APIClient.APIClient
 
-## Dependency Management
+Sample Output 
+
+Weather Data for Kolkata:
+Temperature: 30.2 °C
+Condition: Clear sky (code 0)
+Time: 14 Aug 2025, 05:45 PM
+
+Features
+
+* Fetches live weather data
+* Maps weather codes to descriptions
+* Formats time for readability
+
+Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
